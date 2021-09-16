@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Types. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Custom_Products::custom_productsgrid_index" title="Custom Products" module="Custom_Products"  sortOrder="20" dependsOnModule="Custom_Products" action="products/productsgrid/index" resource="Custom_Products::custom_productsgrid_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

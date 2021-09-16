@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+     <update handle="editor"/>
+    <body>
+	   <referenceContainer name="content">
+            <block class="Custom\Products\Block\Adminhtml\Productsgrid\Edit" name="products_productsgrid_edit"/>
+        </referenceContainer>
+		 <referenceContainer name="left">
+            <block class="Custom\Products\Block\Adminhtml\Productsgrid\Edit\Tabs" name="products_productsgrid_edit_tabs">
+				<block class="Custom\Products\Block\Adminhtml\Productsgrid\Edit\Tab\Name" name="products_productsgrid_edit_tab_name"/>
+				 <action method="addTab">
+                    <argument name="name" xsi:type="string">name_section</argument>
+                    <argument name="block" xsi:type="string">products_productsgrid_edit_tab_name</argument>
+                </action>
+				<!--CedAddTab-->
+			</block>
+        </referenceContainer>
+    </body>
+</page>
